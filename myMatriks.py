@@ -105,7 +105,6 @@ class matriks:
 
   #method untuk transpose matriks
   def transpose(self):
-    #self.Arr_Transpose = []
     _kolom = self.kolom
     _baris = self.baris
     #creating the column / preparing
