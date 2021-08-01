@@ -1,14 +1,11 @@
 """class matriksnya"""
 
 class matriks:
-  # array / matriks nya
-  Array = []
-  # atribut pendukung
-  
-  
+
   ## constructor ##
 
   def __init__(self, val=[[]]):
+
     ## Attribut array/matriksnya ##
     self.Array = val
     ## Atribut pendukung ##
@@ -19,12 +16,7 @@ class matriks:
 
     row = len(val)
     #untuk membuat matriks sesuai jumlah baris & memasukkan data dari parameter
-    '''
-    for i in range(row):
-      self.Array.append([])
-      for j in range(column):
-        self.Array[i].append(val[i][j]) # line buat nambahin item ke matriksnya (sementara jadi matriks kosong)
-    '''
+
     #generating ordo & diagonal
     self.baris = row#len(self.Array)
     self.kolom = 0
