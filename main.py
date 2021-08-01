@@ -9,12 +9,14 @@ Data = [
 ] 
 
 A = M.matriks(val = Data) #objek matriks
-print("matriks : ", A.Array)
-print("Ordo : ", A.ordo())
-print("diagonal [main][secondary]: ", A.diagonal())
-B = M.matriks(A.transpose())
-print("matriks transpose : ", B.Array)
-# masih eror
-C = M.matriks(B.transpose())
-print(C.Array) 
+print("matriks A : ", A.Array)
+print("Ordo A : ", A.ordo())
+print("diagonal A [main][secondary]: ", A.diagonal())
 
+B = M.matriks(A.transpose())
+print("matriks B = A transpose : ", B.Array)
+print("Ordo B : ", B.ordo())
+
+C = M.matriks(B.transpose())
+print("Matriks C = B Transpose",C.Array)
+print("Ordo C : ", C.ordo())

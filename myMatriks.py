@@ -60,6 +60,7 @@ class matriks:
   # method generate diagonal (private)
   def _generate_diagonal(self):
     if self._is_persegi():#checking matrix type
+      print(self.ordo())
       # main diagonal
       for i in range(self.baris):
         self.main_diagonal.append(self.Array[i][i])
@@ -99,8 +100,9 @@ class matriks:
       res.append(self.Array[i][kolom])
     return res
 
-   #method untuk transpose matriks
+  #method untuk transpose matriks
   def transpose(self):
+    self.Arr_Transpose = []
     _kolom = self.kolom
     _baris = self.baris
     #creating the column / preparing
