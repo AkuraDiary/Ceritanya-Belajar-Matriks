@@ -4,18 +4,21 @@ class matriks:
   # array / matriks nya
   Array = []
   # atribut pendukung
-  baris, kolom = 0, 0
-  main_diagonal=[]
-  secondary_diagonal=[]
-  Arr_Transpose = []
+  
   
   ## constructor ##
 
   def __init__(self, val=[[]]):
-    row = len(val)
-    #column = len(val[0])
-    #untuk membuat matriks sesuai jumlah baris & memasukkan data dari parameter
+    ## Attribut array/matriksnya ##
     self.Array = val
+    ## Atribut pendukung ##
+    self.baris, self.kolom = 0, 0
+    self.main_diagonal=[]
+    self.secondary_diagonal=[]
+    self.Arr_Transpose = []
+
+    row = len(val)
+    #untuk membuat matriks sesuai jumlah baris & memasukkan data dari parameter
     '''
     for i in range(row):
       self.Array.append([])
@@ -102,7 +105,7 @@ class matriks:
 
   #method untuk transpose matriks
   def transpose(self):
-    self.Arr_Transpose = []
+    #self.Arr_Transpose = []
     _kolom = self.kolom
     _baris = self.baris
     #creating the column / preparing
