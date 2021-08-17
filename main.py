@@ -18,10 +18,13 @@ print(A.get_elemen_baris_ke(1))
 print(A.get_elemen_kolom_ke(2))
 
 print("\n")
+
 B = M.matriks(A.transpose())
 print("matriks B = A transpose : ", B.Array)
 print("Ordo B : ", B.ordo())
+
 print("\n")
+
 C = M.matriks(B.transpose())
 print("Matriks C = B Transpose",C.Array)
 print("Ordo C : ", C.ordo())

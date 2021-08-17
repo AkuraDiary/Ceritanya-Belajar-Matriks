@@ -116,8 +116,4 @@ class matriks:
 
 #you know what it is
 if __name__ == "__main__":
-  A = matriks(row=4, column=4)
-  print(A.Array)
-  print(A.jumlah_baris())
-  print(A.ordo())
-  print(A.diagonal())
+  print("halo, ini module myMatriks")
